@@ -75,6 +75,23 @@
     border:1px solid rgba(255,255,255,.22);
     padding:7px 14px;border-radius:999px;
   }
+  .urlbar{margin:30px 0 26px;}
+  .urlbar-tag{
+    display:block;font-family:"Space Grotesk",sans-serif;
+    font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+    opacity:.88;margin-bottom:9px;
+  }
+  .urlbar-field{
+    display:inline-flex;align-items:center;gap:10px;
+    background:#fff;color:var(--ink);border-radius:12px;padding:12px 18px;
+    font-family:"JetBrains Mono",monospace;font-weight:700;
+    font-size:clamp(15px,2.6vw,19px);text-decoration:none;
+    box-shadow:0 8px 24px rgba(0,0,0,.18);
+    transition:transform .15s, box-shadow .15s;
+  }
+  .urlbar-field:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.26);}
+  .urlbar-ico{font-size:17px;}
+  .urlbar-url{color:var(--violet-deep);}
 
   /* ---------- Section blocks ---------- */
   section{margin-top:48px;}
@@ -228,6 +245,7 @@
     body{background:#fff;font-size:12pt;}
     .hero{background:#fff !important;color:var(--ink);padding:0 0 10px;}
     .hero .eyebrow,.chip{border-color:var(--line);color:var(--ink);background:none;}
+    .urlbar-field{box-shadow:none;border:1px solid var(--line);}
     h1 .em{color:var(--violet);}
     .copy{display:none !important;}
     .box{border:1px solid #ccc;}
@@ -246,6 +264,13 @@
     <span class="eyebrow">Taller · Universidad Francisco de Vitoria</span>
     <h1>Crea tu web con <span class="em">IA</span> y Bootstrap</h1>
     <p class="lead">En dos horas vas a tener tu propia página web publicada. Y casi no vas a escribir código: se lo vas a pedir a una inteligencia artificial.</p>
+    <div class="urlbar">
+      <span class="urlbar-tag">Abre esto en tu ordenador para empezar</span>
+      <a class="urlbar-field" href="https://juanpueyo.github.io/summer/" target="_blank" rel="noopener">
+        <span class="urlbar-ico">🌐</span>
+        <span class="urlbar-url">juanpueyo.github.io/summer</span>
+      </a>
+    </div>
     <div class="chips">
       <span class="chip">⏱ 2 horas</span>
       <span class="chip">🧩 Sin saber programar</span>
