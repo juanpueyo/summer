@@ -1,0 +1,178 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  body{ font-family: system-ui, sans-serif; }
+  .hero-fest{
+    background:
+      linear-gradient(rgba(25,12,48,.55), rgba(60,20,60,.8)),
+      url("https://picsum.photos/seed/summerfest/1600/900") center/cover;
+    color:#fff; padding:130px 0;
+  }
+  .brand-fest{ font-weight:800; letter-spacing:-.5px; }
+  .txt-fest{ color:#ff5c8a; }
+  .btn-fest{ background:#ff5c8a; color:#fff; }
+  .btn-fest:hover{ background:#e94a78; color:#fff; }
+</style>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand-fest" href="#">☀️ SummerFest</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lineup">Line-up</a></li>
+        <li class="nav-item"><a class="nav-link" href="#entradas">Entradas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Portada (hero) -->
+<header class="hero-fest text-center">
+  <div class="container">
+    <p class="text-uppercase fw-bold txt-fest mb-2">10, 11 y 12 de julio · 2026</p>
+    <h1 class="display-1 brand-fest">SummerFest</h1>
+    <p class="lead mb-4">Tres días de música, sol y buen rollo.</p>
+    <a href="#entradas" class="btn btn-fest btn-lg px-4 fw-bold">Consigue tu entrada</a>
+  </div>
+</header>
+
+<!-- Line-up (tarjetas) -->
+<section id="lineup" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Line-up</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://picsum.photos/seed/artist1/600/400" class="card-img-top" alt="">
+          <div class="card-body text-center">
+            <span class="badge bg-primary mb-2">Viernes</span>
+            <h5 class="card-title">The Neon Waves</h5>
+            <p class="card-text text-muted">Cierran la primera noche en el escenario principal.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://picsum.photos/seed/artist2/600/400" class="card-img-top" alt="">
+          <div class="card-body text-center">
+            <span class="badge bg-danger mb-2">Sábado</span>
+            <h5 class="card-title">Luna Roja</h5>
+            <p class="card-text text-muted">El directo más esperado del festival.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://picsum.photos/seed/artist3/600/400" class="card-img-top" alt="">
+          <div class="card-body text-center">
+            <span class="badge bg-success mb-2">Domingo</span>
+            <h5 class="card-title">DJ Cosmos</h5>
+            <p class="card-text text-muted">Sesión de cierre hasta el amanecer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Carrusel de momentos -->
+<div id="momentos" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://picsum.photos/seed/m1/1600/500" class="d-block w-100" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/seed/m2/1600/500" class="d-block w-100" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/seed/m3/1600/500" class="d-block w-100" alt="">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#momentos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#momentos" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Entradas -->
+<section id="entradas" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Entradas</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="fw-bold">Día suelto</h5>
+            <p class="display-6 fw-bold">35€</p>
+            <p class="text-muted">Acceso a un día a elegir.</p>
+            <a href="#contacto" class="btn btn-outline-dark w-100">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow border-primary border-2">
+          <div class="card-body">
+            <span class="badge bg-primary mb-2">El más vendido</span>
+            <h5 class="fw-bold">Abono 3 días</h5>
+            <p class="display-6 fw-bold">80€</p>
+            <p class="text-muted">Los tres días al mejor precio.</p>
+            <a href="#contacto" class="btn btn-primary w-100">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="fw-bold">VIP</h5>
+            <p class="display-6 fw-bold">150€</p>
+            <p class="text-muted">Zona exclusiva y barra libre.</p>
+            <a href="#contacto" class="btn btn-outline-dark w-100">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto (formulario) -->
+<section id="contacto" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">¿Te apuntas?</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label class="form-label">Nombre</label>
+          <input type="text" class="form-control" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Correo</label>
+          <input type="email" class="form-control" placeholder="tu@email.com">
+        </div>
+        <button class="btn btn-fest btn-lg w-100 fw-bold">Quiero mi entrada</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pie de página -->
+<footer class="bg-dark text-light text-center py-4">
+  <div class="container">
+    <p class="brand-fest txt-fest mb-1">☀️ SummerFest 2026</p>
+    <p class="mb-0 small">Recinto Ferial · 10–12 de julio · © 2026 · Hecho con Bootstrap</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS (menús, carrusel...) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
